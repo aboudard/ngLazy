@@ -2,10 +2,11 @@
   "name": "ng-lazy",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve ng-app",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "start": "ng serve ng-app --port 4400",
+    "build:orders": "ng build orders",
+    "build:app": "ng build ng-app",
+    "watch:orders": "ng build orders --watch --configuration development",
+    "watch:app": "ng build ng-app --watch --configuration development",
     "test": "ng test"
   },
   "private": true,
@@ -33,6 +34,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^16.2.0",
     "typescript": "~5.1.3"
   }
 }
