@@ -18,7 +18,7 @@ const routes: Routes = [
   },
   {
     path: 'bills',
-    loadChildren: () => import('orders')
+    loadChildren: () => import('orders/bills')
     .then((m) => m.BillsModule),
   }
 ];

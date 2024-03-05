@@ -18,7 +18,10 @@
     "paths": {
       "orders": [
         "dist/orders"
-      ]
+      ],
+      "orders/*": [
+        "dist/orders/*"
+      ],
     },
     "importHelpers": true,
     "target": "ES2022",
