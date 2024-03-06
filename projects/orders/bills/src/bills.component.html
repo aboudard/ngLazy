@@ -1,1 +1,6 @@
-<p>bills works!</p>
+<p>All bills</p>
+<ul>
+  <li *ngFor="let bill of bills">
+    {{bill.name}} / {{bill.amount}}
+  </li>
+</ul>

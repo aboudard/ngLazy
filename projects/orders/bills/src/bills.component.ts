@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Bill } from './dto/bill';
+import { BillsService } from './services/bills.service';
 
 @Component({
   selector: 'lib-bills',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./bills.component.css']
 })
 export class BillsComponent {
-
+  bills: Bill[] = inject(BillsService).getAll();
 }
