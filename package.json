@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "start": "ng serve ng-app --port 4400",
-    "build:orders": "ng build orders",
+    "build:core": "ng build core",
     "build:app": "ng build ng-app",
-    "watch:orders": "ng build orders --watch --configuration development",
+    "watch:core": "ng build core --watch --configuration development",
     "watch:app": "ng build ng-app --watch --configuration development",
     "test": "ng test"
   },

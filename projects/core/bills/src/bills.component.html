@@ -1,0 +1,6 @@
+<p>All bills</p>
+<ul>
+  <li *ngFor="let bill of bills">
+    {{bill.name}} / {{bill.amount}} / {{bill.pending ? 'Pending' : 'Paid'}}
+  </li>
+</ul>

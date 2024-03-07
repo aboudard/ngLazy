@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { Bill, BillsService } from 'orders/bills';
+import { Bill, BillsService } from 'core';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +9,9 @@ import { Bill, BillsService } from 'orders/bills';
 export class AppComponent {
   title = 'Orders Application';
   bill: Bill = {
-    id: '1',
-    name: 'Archery supplies',
-    amount: 123.45,
+    id: '54',
+    name: 'Fake bill',
+    amount: 987.65,
     date: new Date(),
   };
   pendingBills: Bill[] = inject(BillsService).getPending();
