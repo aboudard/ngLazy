@@ -11,6 +11,16 @@ const routes: Routes = [
     loadChildren: () => import('./users/users.module')
     .then((m) => m.UsersModule),
   },
+  {
+    path: 'orders',
+    loadChildren: () => import('ng-core')
+    .then((m) => m.OrdersModule),
+  },
+  {
+    path: 'bills',
+    loadChildren: () => import('ng-core')
+    .then((m) => m.BillsModule),
+  }
 ];
 
 @NgModule({
