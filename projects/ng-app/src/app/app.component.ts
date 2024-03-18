@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { Bill, BillsService } from 'ng-core/bills';
 
 @Component({
     selector: 'app-root',
@@ -10,4 +11,6 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'ng-app';
+  pendingBills: Bill[] = inject(BillsService).getPending();
+  // pendingBills: Bill[] = [];
 }
