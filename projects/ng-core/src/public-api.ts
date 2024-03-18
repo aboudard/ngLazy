@@ -4,5 +4,5 @@
 
 export * from './lib/ng-core.service';
 export * from './lib/ng-core.component';
-export * from './lib/orders/orders.module';
-export * from './lib/bills/bills.module';
+export * from './lib/orders/orders.routes';
+export * from './lib/bills/bills.routes';
