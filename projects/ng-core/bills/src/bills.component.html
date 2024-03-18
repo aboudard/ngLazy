@@ -1,0 +1,6 @@
+<p>All bills</p>
+<ul>
+    @for (bill of bills; track $index) {
+    <li>{{bill.name}} / {{bill.amount}} / {{bill.pending ? 'Pending' : 'Paid'}}</li>
+    }
+</ul>

@@ -9,9 +9,9 @@ export const appRoutes: Routes = [
       path: 'users', loadChildren: () => import('./users/users.routes').then((m) => m.usersRoutes),
     },
     {
-      path: 'orders', loadChildren: () => import('ng-core').then((m) => m.ordersRoutes),
+      path: 'orders', loadChildren: () => import('ng-core/orders').then((m) => m.ordersRoutes),
     },
     {
-      path: 'bills', loadChildren: () => import('ng-core').then((m) => m.billsRoutes),
+      path: 'bills', loadChildren: () => import('ng-core/bills').then((m) => m.billsRoutes),
     }
 ];
