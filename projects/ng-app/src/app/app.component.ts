@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { Bill, BillsService } from 'ng-core/bills';
+import { Bill, BillsService } from 'ng-core';
 
 @Component({
     selector: 'app-root',

@@ -1,6 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { Bill } from './dto/bill';
-import { BillsService } from './services/bills.service';
+import { BillsService, Bill } from 'ng-core';
 
 @Component({
   selector: 'lib-bills',
