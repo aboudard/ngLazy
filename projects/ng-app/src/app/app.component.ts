@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { Bill, BillsService } from 'ng-core';
 
 @Component({
@@ -7,7 +7,7 @@ import { Bill, BillsService } from 'ng-core';
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
     standalone: true,
-    imports: [RouterLink, RouterOutlet]
+    imports: [RouterLink, RouterOutlet, RouterLinkActive]
 })
 export class AppComponent {
   title = 'ng-app';

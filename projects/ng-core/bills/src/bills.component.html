@@ -1,6 +1,8 @@
-<p>All bills</p>
-<ul>
-    @for (bill of bills; track $index) {
-    <li>{{bill.name}} / {{bill.amount}} / {{bill.pending ? 'Pending' : 'Paid'}}</li>
+<h4>All bills</h4>
+<table class="table">
+    <tbody>
+    @for (bill of bills; track bill.id) {
+        <tr libBill [bill]="bill" (setPending)="handleBillPending($event)" ></tr>
     }
-</ul>
+    </tbody>
+</table>

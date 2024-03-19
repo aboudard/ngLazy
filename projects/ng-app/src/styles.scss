@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Default variable overrides
+$body-bg: #ffffff;
+$link-color: #ff2020;
+$component-active-bg: #ff2020;
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

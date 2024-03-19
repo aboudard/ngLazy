@@ -1,0 +1,7 @@
+<th scope="row">{{bill().id}}</th>
+<td>{{bill().name}}</td>
+<td>{{bill().amount}}</td>
+<td>{{bill().pending ? 'Pending' : 'Paid'}}</td>
+<td>
+    <button type="button" class="btn btn-info" (click)="billPay(bill().id)">Pay</button>
+</td>
