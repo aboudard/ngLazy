@@ -5,3 +5,8 @@
 <td>
     <button type="button" class="btn btn-info" (click)="billPay(bill().id)">Pay</button>
 </td>
+<td>
+    @defer (when bill().pending) {
+        <lib-paid />
+    }
+</td>
